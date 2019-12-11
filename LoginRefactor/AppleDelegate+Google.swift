@@ -8,15 +8,19 @@
 
 import Foundation
 import GoogleSignIn
-
+import FBSDKCoreKit
 
 extension AppDelegate {
-  
-  func configureGGLContext() {
-    GIDSignIn.sharedInstance().clientID = GOOGLE_API_KEY
-  }
-  
-  func googleCanOpenURL(_ app: UIApplication, url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
-    return GIDSignIn.sharedInstance()!.handle(url)
-  }
+    
+//    func configureGGLContext() {
+//        GIDSignIn.sharedInstance().clientID = GOOGLE_API_KEY
+//    }
+//    
+//    func googleCanOpenURL(_ app: UIApplication, url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+//        return GIDSignIn.sharedInstance()!.handle(url)
+//    }
+//    
+//    func configureFacebook(_ application: UIApplication, _ launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
+//        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+//    }
 }

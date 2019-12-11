@@ -1,0 +1,6 @@
+framework module Pods_LoginRefactorTests {
+  umbrella header "Pods-LoginRefactorTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

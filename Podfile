@@ -8,6 +8,7 @@ target 'LoginRefactor' do
   # Pods for LoginRefactor
   pod 'FacebookCore'
   pod 'FacebookLogin'
+#  pod 'FBSDKLoginKit'
   pod 'GoogleSignIn'
 
   target 'LoginRefactorTests' do
