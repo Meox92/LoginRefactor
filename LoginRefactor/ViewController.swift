@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import GoogleSignIn
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, GIDSignInDelegate {
+    
+    
     @IBOutlet weak var userDataLabel: UILabel!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance().presentingViewController = self
+        GIDSignIn.sharedInstance().delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -22,11 +28,20 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onGoogleLogin(_ sender: Any) {
-        print("Requested login with facebook")
+        GIDSignIn.sharedInstance().signIn()
+        print("Requested login with google")
     }
     
     @IBAction func onEmailLogin(_ sender: Any) {
-        print("Requested login with facebook")
+        print("Requested login with email")
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            print(error.localizedDescription)
+        } else {
+            userDataLabel.text = user.profile.name
+        }
     }
     
 }
