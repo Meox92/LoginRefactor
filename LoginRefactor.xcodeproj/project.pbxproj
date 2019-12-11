@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		B10CC12E23A1877F00D020D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10CC12D23A1877F00D020D0 /* Assets.xcassets */; };
 		B10CC13123A1877F00D020D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10CC12F23A1877F00D020D0 /* LaunchScreen.storyboard */; };
 		B10CC13C23A1877F00D020D0 /* LoginRefactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10CC13B23A1877F00D020D0 /* LoginRefactorTests.swift */; };
+		B10CC14723A1986E00D020D0 /* AppleDelegate+Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10CC14623A1986E00D020D0 /* AppleDelegate+Google.swift */; };
+		B10CC14923A198BB00D020D0 /* secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10CC14823A198BB00D020D0 /* secret.swift */; };
 		B897B130D1363DE2F5D2D28A /* Pods_LoginRefactorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98046DFD710955ABCC87B1FF /* Pods_LoginRefactorTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		B10CC13723A1877F00D020D0 /* LoginRefactorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginRefactorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10CC13B23A1877F00D020D0 /* LoginRefactorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRefactorTests.swift; sourceTree = "<group>"; };
 		B10CC13D23A1877F00D020D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10CC14623A1986E00D020D0 /* AppleDelegate+Google.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppleDelegate+Google.swift"; sourceTree = "<group>"; };
+		B10CC14823A198BB00D020D0 /* secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secret.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +89,6 @@
 				73E985090EE43E4BACE61CFD /* Pods-LoginRefactorTests.debug.xcconfig */,
 				369BF15A90A8C29279F955AC /* Pods-LoginRefactorTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -119,6 +122,8 @@
 				B10CC12D23A1877F00D020D0 /* Assets.xcassets */,
 				B10CC12F23A1877F00D020D0 /* LaunchScreen.storyboard */,
 				B10CC13223A1877F00D020D0 /* Info.plist */,
+				B10CC14623A1986E00D020D0 /* AppleDelegate+Google.swift */,
+				B10CC14823A198BB00D020D0 /* secret.swift */,
 			);
 			path = LoginRefactor;
 			sourceTree = "<group>";
@@ -320,6 +325,8 @@
 			files = (
 				B10CC12923A1877D00D020D0 /* ViewController.swift in Sources */,
 				B10CC12523A1877D00D020D0 /* AppDelegate.swift in Sources */,
+				B10CC14923A198BB00D020D0 /* secret.swift in Sources */,
+				B10CC14723A1986E00D020D0 /* AppleDelegate+Google.swift in Sources */,
 				B10CC12723A1877D00D020D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
