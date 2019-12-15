@@ -16,31 +16,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ZuU-O2-alW">
-                                <rect key="frame" x="153" y="355.5" width="108" height="185.5"/>
+                                <rect key="frame" x="16" y="355.5" width="382" height="185.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg3-41-q8C">
-                                        <rect key="frame" x="0.0" y="0.0" width="108" height="30"/>
-                                        <state key="normal" title="Facebook Login"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Facebook Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="onFacebookLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xJt-93-K4d"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRn-wO-Stf">
-                                        <rect key="frame" x="0.0" y="55" width="108" height="30"/>
-                                        <state key="normal" title="Google Login"/>
+                                        <rect key="frame" x="0.0" y="55" width="382" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Google Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="onGoogleLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d1h-Sy-QER"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIw-0c-5z1">
-                                        <rect key="frame" x="0.0" y="110" width="108" height="30"/>
-                                        <state key="normal" title="Email Login"/>
+                                        <rect key="frame" x="0.0" y="110" width="382" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Email Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="onEmailLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0c3-4V-FfZ"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cea-pS-qpa">
-                                        <rect key="frame" x="0.0" y="165" width="108" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="165" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -50,8 +59,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZuU-O2-alW" secondAttribute="trailing" constant="16" id="1TN-nY-7cd"/>
                             <constraint firstItem="ZuU-O2-alW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1jO-mF-LJK"/>
                             <constraint firstItem="ZuU-O2-alW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ul3-Mx-93e"/>
+                            <constraint firstItem="ZuU-O2-alW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="w9G-zi-exw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -12,10 +12,7 @@ import FacebookCore
 import FacebookLogin
 
 class ViewController: UIViewController, GIDSignInDelegate {
-    
-    
     @IBOutlet weak var userDataLabel: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,13 +53,32 @@ class ViewController: UIViewController, GIDSignInDelegate {
     
     @IBAction func onEmailLogin(_ sender: Any) {
         print("Requested login with email")
+        // Call https://jsonplaceholder.typicode.com/users
+        
+        let url = URL(string: "https://jsonplaceholder.typicode.com/users")!
+
+        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+            guard let data = data else { return }
+            print(String(data: data, encoding: .utf8)!)
+            if let jsonObj = try? JSONSerialization.jsonObject(with: data, options: []) as? [Any] {
+                if let firstUser = jsonObj.first as? [String: Any]{
+                    DispatchQueue.main.async {
+                         self.userDataLabel.text = "Logged with mail: " + (firstUser["name"] as! String)
+                    }
+                }
+
+            }
+        }
+
+        task.resume()
+
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print(error.localizedDescription)
         } else {
-            userDataLabel.text = user.profile.name
+            userDataLabel.text = "Logged with Google: " + user.profile.name
         }
     }
     
@@ -88,7 +104,7 @@ class ViewController: UIViewController, GIDSignInDelegate {
                 let imageUrl = imageDict["url"] as! String
                 
                 print("user id: \(idFb), firstName: \(firstName), fullname: \(fullName), lastname: \(lastName), picture: \(imageUrl), email: \(email)")
-                self.userDataLabel.text = fullName
+                self.userDataLabel.text = "Logged with Facebook: " + fullName
                 
                 
             } else {
