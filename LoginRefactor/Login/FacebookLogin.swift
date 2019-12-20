@@ -10,11 +10,6 @@ import Foundation
 import FacebookCore
 import FacebookLogin
 
-typealias loginCompletion = (Result<User, Error>) -> Void
-
-protocol LoginProtocol: class {
-    func requestLogin(completion: @escaping (Result<User, Error>) -> Void)
-}
 
 
 class FacebookLogin: LoginProtocol {

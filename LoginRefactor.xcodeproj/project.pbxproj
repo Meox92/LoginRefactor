@@ -20,6 +20,8 @@
 		B1D14B2A23AD6F8F006D9AAD /* FacebookLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D14B2923AD6F8F006D9AAD /* FacebookLogin.swift */; };
 		B1D14B2C23AD6FBE006D9AAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D14B2B23AD6FBE006D9AAD /* User.swift */; };
 		B1D14B3023AD7DE7006D9AAD /* GoogleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D14B2F23AD7DE7006D9AAD /* GoogleLogin.swift */; };
+		B1D14B3223AD7F0E006D9AAD /* EmailLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D14B3123AD7F0E006D9AAD /* EmailLogin.swift */; };
+		B1D14B3423AD81B0006D9AAD /* GenericLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D14B3323AD81B0006D9AAD /* GenericLogin.swift */; };
 		B897B130D1363DE2F5D2D28A /* Pods_LoginRefactorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98046DFD710955ABCC87B1FF /* Pods_LoginRefactorTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		B1D14B2923AD6F8F006D9AAD /* FacebookLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLogin.swift; sourceTree = "<group>"; };
 		B1D14B2B23AD6FBE006D9AAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B1D14B2F23AD7DE7006D9AAD /* GoogleLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLogin.swift; sourceTree = "<group>"; };
+		B1D14B3123AD7F0E006D9AAD /* EmailLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLogin.swift; sourceTree = "<group>"; };
+		B1D14B3323AD81B0006D9AAD /* GenericLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericLogin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 			children = (
 				B1D14B2923AD6F8F006D9AAD /* FacebookLogin.swift */,
 				B1D14B2F23AD7DE7006D9AAD /* GoogleLogin.swift */,
+				B1D14B3123AD7F0E006D9AAD /* EmailLogin.swift */,
+				B1D14B3323AD81B0006D9AAD /* GenericLogin.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -340,12 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D14B3223AD7F0E006D9AAD /* EmailLogin.swift in Sources */,
 				B10CC12923A1877D00D020D0 /* ViewController.swift in Sources */,
 				B1D14B2A23AD6F8F006D9AAD /* FacebookLogin.swift in Sources */,
 				B1D14B3023AD7DE7006D9AAD /* GoogleLogin.swift in Sources */,
 				B10CC12523A1877D00D020D0 /* AppDelegate.swift in Sources */,
 				B10CC14923A198BB00D020D0 /* secret.swift in Sources */,
 				B10CC14723A1986E00D020D0 /* AppleDelegate+Google.swift in Sources */,
+				B1D14B3423AD81B0006D9AAD /* GenericLogin.swift in Sources */,
 				B10CC12723A1877D00D020D0 /* SceneDelegate.swift in Sources */,
 				B1D14B2C23AD6FBE006D9AAD /* User.swift in Sources */,
 			);
