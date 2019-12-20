@@ -15,7 +15,7 @@
 		B10CC12E23A1877F00D020D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10CC12D23A1877F00D020D0 /* Assets.xcassets */; };
 		B10CC13123A1877F00D020D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10CC12F23A1877F00D020D0 /* LaunchScreen.storyboard */; };
 		B10CC13C23A1877F00D020D0 /* LoginRefactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10CC13B23A1877F00D020D0 /* LoginRefactorTests.swift */; };
-		B10CC14723A1986E00D020D0 /* AppleDelegate+Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10CC14623A1986E00D020D0 /* AppleDelegate+Google.swift */; };
+		B10CC14723A1986E00D020D0 /* AppleDelegate+SocialLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10CC14623A1986E00D020D0 /* AppleDelegate+SocialLogin.swift */; };
 		B10CC14923A198BB00D020D0 /* secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10CC14823A198BB00D020D0 /* secret.swift */; };
 		B1D14B2A23AD6F8F006D9AAD /* FacebookLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D14B2923AD6F8F006D9AAD /* FacebookLogin.swift */; };
 		B1D14B2C23AD6FBE006D9AAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D14B2B23AD6FBE006D9AAD /* User.swift */; };
@@ -53,7 +53,7 @@
 		B10CC13723A1877F00D020D0 /* LoginRefactorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginRefactorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10CC13B23A1877F00D020D0 /* LoginRefactorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRefactorTests.swift; sourceTree = "<group>"; };
 		B10CC13D23A1877F00D020D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B10CC14623A1986E00D020D0 /* AppleDelegate+Google.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppleDelegate+Google.swift"; sourceTree = "<group>"; };
+		B10CC14623A1986E00D020D0 /* AppleDelegate+SocialLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppleDelegate+SocialLogin.swift"; sourceTree = "<group>"; };
 		B10CC14823A198BB00D020D0 /* secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secret.swift; sourceTree = "<group>"; };
 		B1D14B2923AD6F8F006D9AAD /* FacebookLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLogin.swift; sourceTree = "<group>"; };
 		B1D14B2B23AD6FBE006D9AAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -133,7 +133,6 @@
 				B10CC12D23A1877F00D020D0 /* Assets.xcassets */,
 				B10CC12F23A1877F00D020D0 /* LaunchScreen.storyboard */,
 				B10CC13223A1877F00D020D0 /* Info.plist */,
-				B10CC14623A1986E00D020D0 /* AppleDelegate+Google.swift */,
 				B10CC14823A198BB00D020D0 /* secret.swift */,
 				B1D14B2B23AD6FBE006D9AAD /* User.swift */,
 			);
@@ -152,6 +151,7 @@
 		B1D14B2823AD6F80006D9AAD /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				B10CC14623A1986E00D020D0 /* AppleDelegate+SocialLogin.swift */,
 				B1D14B2923AD6F8F006D9AAD /* FacebookLogin.swift */,
 				B1D14B2F23AD7DE7006D9AAD /* GoogleLogin.swift */,
 				B1D14B3123AD7F0E006D9AAD /* EmailLogin.swift */,
@@ -352,7 +352,7 @@
 				B1D14B3023AD7DE7006D9AAD /* GoogleLogin.swift in Sources */,
 				B10CC12523A1877D00D020D0 /* AppDelegate.swift in Sources */,
 				B10CC14923A198BB00D020D0 /* secret.swift in Sources */,
-				B10CC14723A1986E00D020D0 /* AppleDelegate+Google.swift in Sources */,
+				B10CC14723A1986E00D020D0 /* AppleDelegate+SocialLogin.swift in Sources */,
 				B1D14B3423AD81B0006D9AAD /* GenericLogin.swift in Sources */,
 				B10CC12723A1877D00D020D0 /* SceneDelegate.swift in Sources */,
 				B1D14B2C23AD6FBE006D9AAD /* User.swift in Sources */,

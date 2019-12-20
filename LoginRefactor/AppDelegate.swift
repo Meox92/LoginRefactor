@@ -7,17 +7,14 @@
 //
 
 import UIKit
-import GoogleSignIn
-import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        GIDSignIn.sharedInstance().clientID = GOOGLE_API_KEY
-        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-
+        configureGGLContext()
+        configureFacebook(application, launchOptions)
         return true
     }
     
@@ -36,10 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    func googleCanOpenURL(_ app: UIApplication, url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
-        return GIDSignIn.sharedInstance()!.handle(url)
-    }
-
 
 }
 
