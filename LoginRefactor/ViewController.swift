@@ -94,19 +94,9 @@ class ViewController: UIViewController, GIDSignInDelegate {
             if let res = result {
                 let responseDict = res as! [String:Any]
                 
-                let fullName = responseDict["name"] as! String
                 let firstName = responseDict["first_name"] as! String
-                let lastName = responseDict["last_name"] as! String
-                let email = responseDict["email"] as! String
-                let idFb = responseDict["id"] as! String
-                let pictureDict = responseDict["picture"] as! [String:Any]
-                let imageDict = pictureDict["data"] as! [String:Any]
-                let imageUrl = imageDict["url"] as! String
                 
-                print("user id: \(idFb), firstName: \(firstName), fullname: \(fullName), lastname: \(lastName), picture: \(imageUrl), email: \(email)")
-                self.userDataLabel.text = "Logged with Facebook: " + fullName
-                
-                
+                self.userDataLabel.text = "Logged with Facebook: " + firstName
             } else {
                 print(error?.localizedDescription)
             }
