@@ -9,7 +9,7 @@ import Foundation
 import GoogleSignIn
 
 class GoogleLogin: NSObject, GIDSignInDelegate, LoginProtocol {
-    var completion: ((Result<User, Error>) -> Void)!
+    var completion: loginCompletion!
     var gLoginInstance: GIDSignIn = GIDSignIn.sharedInstance()
     
     deinit {
@@ -22,7 +22,7 @@ class GoogleLogin: NSObject, GIDSignInDelegate, LoginProtocol {
         gLoginInstance.delegate = self
     }
     
-    func requestLogin(completion: @escaping (Result<User, Error>) -> Void) {
+    func requestLogin(completion: @escaping loginCompletion) {
         gLoginInstance.signIn()
         self.completion = completion
     }
@@ -33,7 +33,6 @@ class GoogleLogin: NSObject, GIDSignInDelegate, LoginProtocol {
             print(error.localizedDescription)
             completion(.failure(error))
         } else {
-            let token = user.authentication.idToken
             let user = User(name: user.profile.name )
             completion(.success(user))
         }

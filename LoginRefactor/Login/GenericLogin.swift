@@ -15,9 +15,8 @@ enum LoginChoice: String {
 }
 
 typealias loginCompletion = (Result<User, Error>) -> Void
-
 protocol LoginProtocol: class {
-    func requestLogin(completion: @escaping (Result<User, Error>) -> Void)
+    func requestLogin(completion: @escaping loginCompletion)
 }
 
 

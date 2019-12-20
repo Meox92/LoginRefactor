@@ -9,7 +9,7 @@
 import Foundation
 
 class EmailLogin:LoginProtocol {
-    func requestLogin(completion: @escaping (Result<User, Error>) -> Void) {
+    func requestLogin(completion: @escaping loginCompletion) {
         // Call https://jsonplaceholder.typicode.com/users
         
         let url = URL(string: "https://jsonplaceholder.typicode.com/users")!
